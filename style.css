@@ -1,0 +1,264 @@
+.navbar-custom {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-transparent {
+    background-color: transparent !important;
+    color: white !important; /* Couleur du texte sur fond transparent */
+}
+
+.navbar-scrolled {
+    background-color: #f8f9fa !important; /* Couleur de fond une fois scrollé */
+    color: black !important; /* Couleur du texte une fois scrollé */
+}
+
+.navbar-custom .nav-link, .navbar-custom .navbar-brand{
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-transparent .nav-link, .navbar-transparent .navbar-brand {
+    color: white !important;
+}
+
+.navbar-scrolled .nav-link,.navbar-scrolled .navbar-brand {
+    color: black !important;
+}
+
+.presentation-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.custom-image {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;  
+    filter: brightness(0.3);
+}
+
+.typing-effect {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#about {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+}
+
+.custom-card-image {
+    width: calc(60% - 2rem);
+    margin-left: 5rem;
+    margin-right: 1rem;
+    height: 100vh; /* Assure-toi que la hauteur du conteneur est bien définie */
+    position: relative; /* Positionne l'image par rapport à son conteneur */
+  }
+  
+  .image-presentation {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Positionne l'image en absolu pour qu'elle prenne toute la place */
+    top: 0;
+    left: 0;
+  }
+
+.custom-card-text {
+    width: calc(40% - 2rem); /* 1/3 de l'espace - marge latérale */
+    margin-left: 0.5rem;
+    margin-right: 5rem;
+}
+
+.card {
+    height: 75vh; /* Ajuste la hauteur des cartes pour qu'elles prennent 75% de la hauteur de la fenêtre */
+}
+
+.card-body {
+    overflow: auto;
+}
+
+.margin-card {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.thumbnail {
+    position: relative; /* Necessary for absolute positioning of text */
+    overflow: hidden; /* To clip the text outside the image on hover */
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    transition: filter 0.3s ease-in-out; /* Add transition for smooth effect */
+  }
+  
+  .thumbnail:hover img {
+    filter: brightness(0.7); /* Darken the image on hover */
+  }
+  
+  .skill-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Add transition for smooth appearance */
+  }
+  
+  .thumbnail:hover .skill-text {
+    opacity: 1; /* Show the text on hover */
+  }
+
+.center-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.competences-section {
+    background-color: #f8f9fa; 
+    padding: 50px 0;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projets-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; 
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.carousel-inner {
+    padding: 30px 0;
+    height: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;  
+    background-color: white;   
+    border-radius: 10px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px; 
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;         
+    height: 100%;        
+    object-fit: cover; 
+    border-right-color: #000;  
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px 20px;
+}
+
+
+.carousel-item .col-md-6:first-child {
+    flex: 2; 
+}
+
+.carousel-item .col-md-6:last-child {
+    flex: 1;
+}
+
+
+#projectCarousel {
+    min-height: 500px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+}
+
+.form-margin-mx {
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+.button-form-p {
+   padding: 0.75rem 3rem !important;
+}
+
+.footer-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-image {
+    width: 100%;
+    height: 400px; /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px; /* Taille du bandeau */
+    background: rgba(0, 0, 0, 0.9); /* Bandeau semi-transparent */
+    z-index: 2;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Hauteur du contenu pour matcher le bandeau */
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.info-box {
+    text-align: center;
+    padding: 0 15px;
+}
+
