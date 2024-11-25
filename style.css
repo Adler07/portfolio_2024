@@ -1,3 +1,13 @@
+
+.not_index {
+    padding-top: 6rem;
+    padding-bottom:6rem;
+}
+
+.liste_dark {
+    color: black !important;
+}
+
 .navbar-custom {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -8,8 +18,9 @@
 }
 
 .navbar-scrolled {
-    background-color: #f8f9fa !important; /* Couleur de fond une fois scrollé */
+    background-color: white !important; /* Couleur de fond une fois scrollé */
     color: black !important; /* Couleur du texte une fois scrollé */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-custom .nav-link, .navbar-custom .navbar-brand{
@@ -45,13 +56,7 @@
     overflow: hidden;
 }
 
-.text-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
+
 
 #about {
     padding-top: 8rem;
@@ -93,6 +98,10 @@
 .margin-card {
     margin-top: 10rem;
     margin-bottom: 10rem;
+}
+
+.formation-bg {
+    background-color: #f8f9fa;
 }
 
 .thumbnail {
@@ -217,6 +226,24 @@
    padding: 0.75rem 3rem !important;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Ajuste cette valeur pour obtenir la hauteur souhaitée */
+  }
+  
+  .card-img-top {
+    height: 200px; /* La hauteur de l'image, ajustable selon ton besoin */
+    object-fit: cover; /* L'image s'ajuste sans déformation */
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Le corps de la carte prend tout l'espace restant */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assure que le texte et le bouton ne se chevauchent pas */
+  }
+  
 .footer-bg {
     position: relative;
     overflow: hidden;
@@ -262,3 +289,17 @@
     padding: 0 15px;
 }
 
+.reseaux_logo {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;
+    align-items: center;    
+}
+
+.bi-github {
+    font-size: 2rem;
+}
+
+.bi-linkedin {
+    font-size: 2rem;
+}
