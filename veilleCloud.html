@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rust et ses utilisations par les grandes entreprises</title>
+    <title>Le Cloud Computing et les Préoccupations Environnementales</title>
     <link rel="stylesheet" href="assets\style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -18,58 +18,84 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link mx-4" href="#home">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link mx-4" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link mx-4" href="#formation">Formation</a></li>
-                    <li class="nav-item"><a class="nav-link mx-4" href="#skills">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link mx-4" href="#projects">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link mx-4" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link mx-4" href="index.html#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link mx-4" href="index.html#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link mx-4" href="index.html#formation">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link mx-4" href="index.html#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link mx-4" href="index.html#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link mx-4" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>   
-    <h1 class="text-center mb-4 not_index">Rust et ses utilisations par les grandes entreprises</h1>
-    <section class="container my-5">
+    <section class="container my-5 bg-white padding-articles">
+        <h1 class="text-center mb-4 not_index">Le Cloud Computing et les préoccupations environnementales</h1>
         <article class="mx-5">
             <h2>Introduction</h2>
             <br><br>
-            <p>Cet article a pour sujet le langage Rust et ses utilisations dans les projets de grosses entreprises. Ce sujet me semble important car Rust devient de plus en plus populaire auprès des développeurs pour de nombreuses raisons, au point où il arrive depuis plusieurs années de suite premier dans les sondages Stack Overflow concernant le langage le plus apprécié de ses utilisateurs. Les grandes entreprises semblent également être intéressées par son potentiel comme nous allons le voir dans un instant.</p>
-            <p>Pour faire un résumé de Rust, il s’agit d’un langage créé par Graydon Hoare en 2006, qui a ensuite été utilisé par la fondation Mozilla pour un nouveau projet avant que ce dernier soit suspendu. De nos jours, Rust est soutenu par la fondation Rust, une communauté qui contribue à améliorer le langage et qui est elle-même soutenue et financée par de grandes entreprises telles que Mozilla, Google, AWS, Microsoft ou encore Huawei.</p>
-            <p>Concernant la technologie en elle-même, Rust offre de nombreux avantages: c’est un langage compilé qui offre des performances équivalentes à C et C++, des langages bas niveau. De plus, sa gestion de la mémoire lui permet d’éviter des erreurs de mémoires courantes que l’on peut retrouver dans les deux langages cités précédemment. La gestion de la mémoire n’est pas complètement manuelle à la manière de C ou C++, mais elle n’est pas automatique comme dans les langages haut niveau comme Python car Rust ne possède pas de ramasse-miettes. Rust utilise à la place des systèmes uniques tels que la propriété, l’emprunt et la durée de vie.</p>
-            <p>Rust possède aussi le concept de concurrence, ce qui permet à un programme d’effectuer plusieurs tâches en même temps et individuellement. Ainsi, Rust permet d’écrire du code performant tout en ayant une sécurité mémoire stricte, ce qui explique son intérêt. Par exemple, le kernel Windows qui a été en partie réécrit en Rust courant 2023 sur décision de Microsoft.</p>
+            <p>
+                Le cloud computing a profondément changé la manière dont les entreprises gèrent leurs infrastructures numériques, leur permettant de réduire leurs coûts tout en augmentant leur flexibilité et leur capacité d'innovation. Toutefois, cette révolution technologique a un revers environnemental. Les centres de données, qui sont le moteur du cloud, consomment des quantités colossales d'énergie et contribuent de manière significative aux émissions de carbone.
+              </p>
+              <p>
+                En effet, les centres de données consomment environ 1 % de la demande énergétique mondiale, et leur empreinte écologique pourrait croître à mesure que l'utilisation des technologies cloud augmente. Cette réalité a suscité des interrogations croissantes sur la durabilité de cette approche. Des technologies comme l'intelligence artificielle, le Big Data, et les services en temps réel intensifient cette demande énergétique.
+              </p>
+              <p>
+                Face à ces défis, les leaders de l'industrie, tels que Google, Microsoft et Amazon, ont pris des mesures pour rendre leurs services plus respectueux de l'environnement. Ces entreprises investissent dans des initiatives visant à alimenter leurs centres de données grâce à des énergies renouvelables, tout en mettant en œuvre des innovations comme le refroidissement par immersion liquide et l'optimisation des charges de travail.
+              </p>
+              <p>
+                Cet article examine en profondeur ces préoccupations, en explorant les impacts environnementaux du cloud, les innovations qui visent à les minimiser et les engagements pris par les grandes entreprises pour un avenir plus durable. Grâce à des exemples concrets, nous verrons comment le cloud peut passer d’un contributeur aux problèmes écologiques à une partie intégrante des solutions.
+              </p>
             <br><br>
-            <h2>Le projet Servo</h2>
+            <h2>Les défis environnementaux du Cloud Computing</h2>
             <br><br>
-            <p>Servo est un moteur de rendu de navigateur web expérimental, initialement entré en développement en 2012 par Mozilla afin de créer une alternative plus moderne et performante au moteur Gecko utilisé par Firefox. Il s’agit du premier gros projet qui a utilisé le Rust car le créateur du langage, Graydon Hoare, était un ingénieur de Mozilla quand il a eu l’idée de créer le langage.</p>
-            <p>Servo tire parti des garanties de sécurité mémoire de Rust pour réduire les risques d'erreurs liés à la gestion de la mémoire, courants dans les moteurs de rendu C++. De plus, il exécute des tâches en parallèle, améliorant les performances sur les machines multi-cœurs. Ainsi, Servo peut rendre des pages plus rapidement en exploitant les processeurs modernes.</p>
-            <p>Cependant, le projet n’a pas encore abouti et Mozilla a réduit ses investissements, notamment à cause de la période Covid, où elle a suspendu le projet et licencié son équipe travaillant sur le projet. La fondation Mozilla a décidé de mettre le projet en open source afin que la communauté grandissante de développeurs Rust puissent contribuer. Les avancements réalisés sur ce projet ont été réutilisés dans d’autres projets de la fondation Mozilla, comme Quantum, qui a pour but de créer la nouvelle génération de moteur de recherche utilisée par la fondation.</p>
+            <p>
+                Le cloud computing repose sur des infrastructures puissantes, souvent centralisées dans des centres de données, qui consomment d'énormes quantités d'énergie. Selon une étude de l'International Energy Agency (IEA), les centres de données représentaient environ 1 % de la consommation électrique mondiale en 2022, un chiffre qui pourrait augmenter à mesure que la demande de services numériques explose. Cette consommation pose plusieurs problèmes environnementaux car une partie importante de l'énergie utilisée provient de combustibles fossiles, contribuant aux émissions de CO₂. 
+              </p>
+              <p>
+                De plus, les centres de données nécessitent des systèmes de refroidissement sophistiqués pour maintenir une température optimale, ce qui augmente encore la consommation énergétique. Enfin, la fabrication et l'élimination des serveurs et équipements génèrent également un impact environnemental significatif.
+              </p>
+              <p>
+                En 2021, un rapport a révélé que les centres de données d'Amazon Web Services (AWS) étaient parmi les plus énergivores au monde. Bien qu'AWS ait pris des mesures pour intégrer davantage d'énergies renouvelables, son empreinte carbone restait un sujet de préoccupation majeure pour les écologistes.
+              </p>
             <br><br>
-            <h2>Le Rust chez Discord</h2>
+            <h2>Les solutions vertes dans le Cloud Computing</h2>
             <br><br>
-            <p>Discord étant un logiciel de messagerie instantanée populaire, il est nécessaire qu’il soit performant et sécurisé. Discord s’est mis en 2020 à réécrire en Rust son service « Statut de lecture », qui permet de définir si un message privé ou sur un serveur a été lu. Ce service gère des milliards de statuts.</p>
-            <p>L’entreprise avait créé ce service en utilisant Go à la base, mais s’est rendue compte que ce service connaissait des pics de latences importants parfois malgré de bonnes performances générales. Les développeurs ont compris que ces latences arrivaient à cause de la manière dont Go fonctionne au niveau de sa mémoire. Le problème venait du ramasse-miettes de Go, qui prenait trop de temps avant de libérer de la mémoire.</p>
-            <p>Les développeurs de Discord se sont alors mis à regarder du côté de Rust, ce qui a demandé aux développeurs d’utiliser une bibliothèque récemment créée et instable à ce moment-là pour être en mesure de l’implémenter dans leur service. Une fois leur code réécrit, ils se sont rendus compte qu’ils ne subissaient plus de problèmes de latences, mais que leur code Rust non-optimisé était plus performant que leur code Go qui lui avait été optimisé auparavant dans le but de réduire les problèmes de latence citées précédemment.</p>
+            <p>
+                Face à ces défis, plusieurs entreprises leaders du cloud computing ont pris des mesures ambitieuses pour réduire leur impact environnemental. Ces initiatives incluent le passage à des énergies renouvelables, l'optimisation de l'efficacité énergétique et l'innovation dans les systèmes de refroidissement.
+              </p>
+              <p>
+                Des entreprises comme Google Cloud se sont engagées à utiliser exclusivement des énergies renouvelables pour alimenter leurs centres de données. En 2020, Google est devenue la première grande entreprise technologique à annoncer qu'elle fonctionnerait avec une énergie 100 % sans carbone d'ici 2030. Pour atteindre cet objectif, Google investit massivement dans les parcs solaires et éoliens.
+              </p>
+              <p>
+                Microsoft, à travers sa plateforme Azure, a expérimenté des solutions innovantes, comme l’utilisation de centres de données sous-marins. En 2020, le projet Natick a démontré que les centres de données submergés consomment moins d'énergie pour le refroidissement tout en restant hautement fiables.
+              </p>
+              <p>
+                IBM Cloud utilise l’intelligence artificielle pour surveiller et optimiser la consommation énergétique de ses centres de données. Ces systèmes permettent de réduire les pics de consommation, contribuant ainsi à une gestion plus durable des ressources.
+              </p>
             <br><br>
-            <h2>L’utilisation du Rust par Cloudflare pour ses outils</h2>
+            <h2>Les impacts positifs et les limites des initiatives écologiques</h2>
             <br><br>
-            <p>En tant qu'entreprise de sécurité et d'infrastructure réseau, Cloudflare doit traiter des millions de requêtes réseau par seconde, et une seule erreur comme un crash peut avoir de graves conséquences. Cela fait de Rust un langage adapté dans la situation de Cloudflare. Ainsi, le géant Américain a décidé d’utiliser Rust via la création de Pingora, un proxy HTTP créé car l’entreprise souhaitait remplacer son ancienne architecture proxy sous Nginx pour augmenter la taille de ses infrastructures.</p>
-            <p>Pingora est conçu pour être performant, notamment dans la gestion de connexions à grande échelle. Ce proxy arrive à traiter plus d’un trillion de requêtes par jour tout en fournissant de nouvelles fonctionnalités pour les utilisateurs, permet d’éviter les erreurs de gestion de mémoire type dépassement de tampon, et n’utilise que 1/3 des ressources mémoires et CPU qu’utilisait l’ancienne architecture.</p>
-            <p>Cloudflare a également transformé Pingora en un framework Rust open source pour répandre l’utilisation du Rust dans la création d’outils réseaux, et ainsi améliorer la sécurité des infrastructures réseaux de manière générale.</p>
+            <p>
+                Les efforts de ces entreprises ont déjà commencé à porter leurs fruits et ont amené à des réductions d’émissions de CO₂. En 2022, Amazon a annoncé que 85 % de son infrastructure cloud était alimentée par des énergies renouvelables, contribuant à une réduction significative des émissions de CO₂. Grâce à des technologies avancées, les centres de données modernes sont désormais capables de traiter davantage de données tout en consommant moins d'énergie par unité de calcul.
+              </p>
+              <p>
+                Malgré ces progrès, des critiques persistent car les objectifs ambitieux de neutralité carbone reposent parfois sur l’achat de crédits carbone, une méthode controversée car elle ne réduit pas directement les émissions. De plus, la demande croissante pour les services cloud compense souvent les gains d'efficacité énergétique, un phénomène connu sous le nom d’effet rebond.
+              </p>
+              <p>
+                En 2023, un rapport a mis en lumière que bien que Microsoft ait considérablement amélioré l’efficacité énergétique de ses centres de données, l’augmentation de la demande pour Azure a annulé une grande partie des bénéfices environnementaux obtenus.
+              </p>
             <br><br>
             <h2>Conclusion</h2>
             <br><br>
-            <p>Pour conclure, il est normal de voir que des grandes entreprises telles que des GAFAM s’intéressent à Rust et se mettent à créer des projets dans ce langage grâce à ses avantages de performances et de sécurité. On peut espérer à l’avenir que davantage d’entreprises se mettront à utiliser Rust pour créer des logiciels ou réécrire leurs programmes, notamment pour remplacer ceux écrits en C ou en C++. De plus, on peut noter que ces grandes entreprises ont mises pour la plupart d’entre elles leurs projets Rust en open source, probablement pour que la communauté de développeurs Rust puisse contribuer à leur évolution et à l’évolution du langage.</p>
+            <p>Le cloud computing offre des avantages considérables, mais il est crucial de prendre en compte son impact environnemental. Les leaders technologiques comme Google, Microsoft et IBM montrent la voie avec des initiatives ambitieuses visant à rendre leurs infrastructures plus durables. Cependant, ces efforts doivent être accélérés et étendus pour répondre aux défis croissants liés à la consommation énergétique et aux émissions de carbone. En fin de compte, la transition vers un cloud véritablement écologique nécessitera non seulement des innovations technologiques, mais aussi une collaboration entre les entreprises, les gouvernements et les consommateurs.</p>
             <br><br>
             <h2>Sources</h2>
             <br><br>
-                <p><a href="https://discord.com/blog/why-discord-is-switching-from-go-to-rust" target="_blank">https://discord.com/blog/why-discord-is-switching-from-go-to-rust</a></p>
-                <p><a href="https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/" target="_blank">https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/</a></p>
-                <p><a href="https://medium.com/@Aaron0928/30-year-old-code-killed-microsoft-rewrites-windows-kernel-with-180-000-lines-of-rust-f891c95959f2" target="_blank">https://medium.com/@Aaron0928/30-year-old-code-killed-microsoft-rewrites-windows-kernel-with-180-000-lines-of-rust-f891c95959f2</a></p>
-                <p><a href="https://wiki.mozilla.org/Quantum" target="_blank">https://wiki.mozilla.org/Quantum</a></p>
-                <p><a href="https://blog.cloudflare.com/tag/rust/" target="_blank">https://blog.cloudflare.com/tag/rust/</a></p>
-                <p><a href="https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet/" target="_blank">https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet/</a></p>
-                <p><a href="https://blog.cloudflare.com/pingora-open-source/" target="_blank">https://blog.cloudflare.com/pingora-open-source/</a></p>
-                <p><a href="https://foundation.rust-lang.org/news/rust-x-google-summer-of-code-2024/" target="_blank">https://foundation.rust-lang.org/news/rust-x-google-summer-of-code-2024/</a></p>
+                <p><a href="https://sustainability.google/reports/google-2023-environmental-report/" target="_blank">https://sustainability.google/reports/google-2023-environmental-report/</a></p>
+                <p><a href="https://aws.amazon.com/sustainability/" target="_blank">https://aws.amazon.com/sustainability/</a></p>
+                <p><a href="https://www.ibm.com/blog/ibm-and-microsoft-partnership-accelerates-sustainable-cloud-modernization/" target="_blank">https://www.ibm.com/blog/ibm-and-microsoft-partnership-accelerates-sustainable-cloud-modernization/</a></p>
+                <p><a href="https://www.microsoft.com/en-us/sustainability/cloud" target="_blank">https://www.microsoft.com/en-us/sustainability/cloud</a></p>
+                <p><a href="https://www.cloudwards.net/cloud-sustainability-statistics/" target="_blank">https://www.cloudwards.net/cloud-sustainability-statistics/</a></p>
     </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
